@@ -1,0 +1,141 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* dark gray */
+    color: #fff;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header h1 {
+    color: #ff3b3f; /* bright red */
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff3b3f;
+    text-shadow: 0 0 5px #ff3b3f;
+}
+
+/* Plan Session Section */
+.plan-session {
+    padding: 60px 0;
+    background: #1a1a1a;
+}
+
+.plan-session h2 {
+    text-align: center;
+    color: #ff3b3f;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Plan Buttons */
+.plan-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.plan-btn {
+    padding: 15px 30px;
+    background: #333;
+    color: #ff3b3f;
+    border: 2px solid #ff3b3f;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.plan-btn:hover {
+    background: #ff3b3f;
+    color: #1a1a1a;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #ff3b3f;
+}
+
+/* Tables */
+.plans table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    display: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,59,63,0.5);
+    background-color: #2a2a2a;
+}
+
+.plans th,
+.plans td {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    font-size: 1.1rem;
+}
+
+.plans th {
+    background-color: #333;
+    color: #ff3b3f;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.plans tr:nth-child(even) {
+    background-color: #252525;
+}
+
+.plans tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+.plans tr:hover {
+    background-color: #f4c430; /* golden highlight */
+    color: #1a1a1a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    font-size: 0.9rem;
+    color: #ccc;
+    border-top: 1px solid #333;
+}

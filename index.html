@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind-Muscle Connection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Mind-Muscle Connection</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#exercises">Exercises</a></li>
+                    <li><a href="#plan-session">Plan Session</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Mind-Muscle Connection</h2>
+            <p>Your ultimate guide to staying fit and healthy.</p>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises" class="exercises">
+        <div class="container">
+            <h2>Wanna train ?</h2>
+            <ul id="exercise-list">
+    <li>
+        <a href="chest.html" class="exercise-card" style="background-image: url('images/chestmainpage.jpg');">
+            <span>Chest</span>
+        </a>
+    </li>
+    <li>
+        <a href="back.html" class="exercise-card" style="background-image: url('images/backmainpage.jpg');">
+            <span>Back</span>
+        </a>
+    </li>
+    <li>
+        <a href="biceps.html" class="exercise-card" style="background-image: url('images/bicepsmainpage.jpg');">
+            <span>Biceps</span>
+        </a>
+    </li>
+    <li>
+        <a href="triceps.html" class="exercise-card" style="background-image: url('images/tricepsmainpage.jpg');">
+            <span>Triceps</span>
+        </a>
+    </li>
+    <li>
+        <a href="shoulders.html" class="exercise-card" style="background-image: url('images/shouldersmainpage.jpg');">
+            <span>Shoulders</span>
+        </a>
+    </li>
+    <li>
+        <a href="legs.html" class="exercise-card" style="background-image: url('images/legsmainpage.jpg');">
+            <span>Legs</span>
+        </a>
+    </li>
+    <li>
+        <a href="core.html" class="exercise-card" style="background-image: url('images/coremainpage.jpg');">
+            <span>Core</span>
+        </a>
+    </li>
+    </ul>
+     </div>
+      </section>
+    
+        <!-- Plan Session Section -->
+<section id="plan-session" class="plan-session-main">
+    <a href="plan-session.html" class="exercise-card plan-session-card" style="background-image: url('images/plansessionimagemainpage.jpg');">
+        <span>Plan Session</span>
+    </a>
+</section>
+ 
+
+
+ <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Mind-Muscle Connection is designed to help you stay in shape with simple, effective exercises that you can do anywhere. Explore exercises for each body part with images, sets, and reps to follow along easily.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mind-Muscle Connection. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Contact form alert
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Thank you for contacting us!');
+            form.reset();
+        });
+    </script>
+</body>
+</html>

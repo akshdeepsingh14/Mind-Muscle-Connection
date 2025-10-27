@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Workout - MIND-MUSCLE CONNECTION</title>
+    <link rel="stylesheet" href="plan-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>MIND-MUSCLE CONNECTION</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan-session.html">Plan Session</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Plan Session Section -->
+    <section class="plan-session">
+        <div class="container">
+            <h2>Choose Your Workout Plan</h2>
+
+            <!-- Buttons to select plan -->
+            <div class="plan-selector">
+                <button class="plan-btn" onclick="showPlan(1)">Plan 1</button>
+                <button class="plan-btn" onclick="showPlan(2)">Plan 2</button>
+                <button class="plan-btn" onclick="showPlan(3)">Plan 3</button>
+                <button class="plan-btn" onclick="showPlan(4)">Plan 4</button>
+            </div>
+
+            <!-- Plans -->
+            <div class="plans">
+                <!-- Plan 1 -->
+                <table class="plan" id="plan1">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Body Part</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>Chest & Triceps</td></tr>
+                        <tr><td>Tuesday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Wednesday</td><td>Legs & Shoulders</td></tr>
+                        <tr><td>Thursday</td><td>Chest & Triceps</td></tr>
+                        <tr><td>Friday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Saturday</td><td>Legs & Shoulders</td></tr>
+                        <tr><td>Sunday</td><td>Rest</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Plan 2 -->
+                <table class="plan" id="plan2">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Body Part</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>Chest & Biceps</td></tr>
+                        <tr><td>Tuesday</td><td>Back & Triceps</td></tr>
+                        <tr><td>Wednesday</td><td>Legs</td></tr>
+                        <tr><td>Thursday</td><td>Shoulders</td></tr>
+                        <tr><td>Friday</td><td>Chest & Back</td></tr>
+                        <tr><td>Saturday</td><td>Biceps & Triceps</td></tr>
+                        <tr><td>Sunday</td><td>Rest</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Plan 3 -->
+                <table class="plan" id="plan3">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Body Part</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>Chest & Shoulders & Triceps</td></tr>
+                        <tr><td>Tuesday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Wednesday</td><td>Legs & Core</td></tr>
+                        <tr><td>Thursday</td><td>Chest & Shoulders & Triceps</td></tr>
+                        <tr><td>Friday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Saturday</td><td>Legs & Core</td></tr>
+                        <tr><td>Sunday</td><td>Rest</td></tr>
+                    </tbody>
+                </table>
+
+                <!-- Plan 4 -->
+                <table class="plan" id="plan4">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Body Part</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Monday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Tuesday</td><td>Chest & Triceps</td></tr>
+                        <tr><td>Wednesday</td><td>Legs</td></tr>
+                        <tr><td>Thursday</td><td>Shoulders & Core</td></tr>
+                        <tr><td>Friday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Saturday</td><td>Chest & Triceps</td></tr>
+                        <tr><td>Sunday</td><td>Rest</td></tr>
+                        <tr><td>Monday</td><td>Legs</td></tr>
+                        <tr><td>Tuesday</td><td>Shoulders & Core</td></tr>
+                        <tr><td>Wednesday</td><td>Back & Biceps</td></tr>
+                        <tr><td>Thursday</td><td>Chest & Triceps</td></tr>
+                        <tr><td>Friday</td><td>Legs</td></tr>
+                        <tr><td>Saturday</td><td>Shoulders & Core</td></tr>
+                        <tr><td>Sunday</td><td>Rest</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mind-Muscle Connection. All rights reserved.</p>
+    </footer>
+
+    <script src="plan.js"></script>
+</body>
+</html>
