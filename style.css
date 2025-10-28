@@ -479,3 +479,110 @@ footer {
     background-color: #1a1a1a;
     font-size: 0.9rem;
 }
+/* ✅ Full Responsive Fix for Mobile & Tablet */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+        padding: 20px;
+    }
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Exercise Cards */
+    #exercise-list {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .exercise-card {
+        width: 45vw;
+        height: 22vh;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    /* Plan Session Card */
+    .plan-session-main {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .plan-session-card {
+        width: 70vw !important;
+        height: 22vh !important;
+        font-size: 1.2rem;
+        border-radius: 16px;
+    }
+
+    /* About */
+    .about p {
+        width: 95%;
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Mobile (Phones under 480px width) */
+@media (max-width: 480px) {
+
+    .hero {
+        height: 55vh;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .exercise-card {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    #exercise-list {
+        gap: 15px;
+    }
+
+    .plan-session-card {
+        width: 85vw !important;
+        height: 20vh !important;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+}
