@@ -1,14 +1,16 @@
-function showPlan(planNumber) {
-    // Hide all plans
-    const plans = document.querySelectorAll('.plan');
-    plans.forEach(plan => plan.style.display = 'none');
+function showPlan(num) {
+    const plans = document.querySelectorAll(".plan");
+    const buttons = document.querySelectorAll(".plan-btn");
 
-    // Show selected plan
-    const selectedPlan = document.getElementById('plan' + planNumber);
-    if(selectedPlan) {
-        selectedPlan.style.display = 'table';
-    }
+    plans.forEach(plan => plan.style.display = "none");
+    document.getElementById(`plan${num}`).style.display = "table";
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
 }
 
-// Show Plan 1 by default
-showPlan(1);
+// Show first plan by default
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("plan1").style.display = "table";
+    document.querySelectorAll(".plan-btn")[0].classList.add("active");
+});
