@@ -552,37 +552,126 @@ footer {
     }
 }
 
-/* Extra Small Mobile (Phones under 480px width) */
+/* ------------------------------ */
+/* ✅ EXTRA MOBILE RESPONSIVENESS */
+/* ------------------------------ */
+
+/* For phones (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Header */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Exercise Cards */
+    #exercise-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .exercise-card {
+        width: 85%;
+        height: 150px;
+        font-size: 1.1rem;
+    }
+
+    /* Plan Session Section */
+    .plan-session-main {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .plan-session-card {
+        width: 85vw !important;
+        height: 160px !important;
+        font-size: 1.1rem;
+    }
+
+    /* About Section */
+    .about p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem;
+        padding: 15px 0;
+    }
+}
+
+/* For very small phones (max-width: 480px) */
 @media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.4rem;
+    }
 
     .hero {
         height: 55vh;
     }
 
     .hero h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .exercise-card {
-        width: 80vw;
-        height: 20vh;
-    }
-
-    #exercise-list {
-        gap: 15px;
+        width: 90%;
+        height: 130px;
     }
 
     .plan-session-card {
-        width: 85vw !important;
-        height: 20vh !important;
+        width: 90vw !important;
+        height: 140px !important;
         font-size: 1rem;
     }
 
-    nav ul {
-        gap: 5px;
+    nav ul li a {
+        font-size: 0.8rem;
     }
 
-    nav ul li a {
-        font-size: 0.85rem;
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
     }
 }
